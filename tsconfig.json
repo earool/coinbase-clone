@@ -16,6 +16,12 @@
     "noEmit": true,
     "jsx": "react-jsx"
   },
-  "include": [".eslintrc.cjs", "src"],
+  "include": [
+    ".eslintrc.cjs",
+    "tailwind.config.cjs",
+    "postcss.config.cjs",
+    "vite.config.ts",
+    "src"
+  ],
   "references": [{ "path": "./tsconfig.node.json" }]
 }
