@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 function StartingHeader() {
   return (
     <header className=' border-gray-border border-b-2 h-16'>
-      <div className='flex justify-between items-center p-4 h-full max-w-4xl mx-auto my-0'>
+      <div className='max-w-5xl flex justify-between items-center p-4 h-full max-w-mw mx-auto my-0'>
         <Link to='/'>
           <p className='text-3xl h-full text-my-blue font-medium'>BaseCoin</p>
         </Link>
