@@ -1,9 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import bitcoinLogo from '../../public/icons/bitcoin.svg';
-import rightArrow from '../../public/icons/right-arrow.png';
-import placeholderImage from '../../public/images/placeholder-landing.png';
+import bitcoinLogo from '../assets/icons/bitcoin.svg';
+import rightArrow from '../assets/icons/right-arrow.png';
+import placeholderImage from '../assets/images/placeholder-landing.png';
 
 function StartingMain() {
   return (
