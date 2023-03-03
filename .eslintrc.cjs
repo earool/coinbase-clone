@@ -22,5 +22,6 @@ module.exports = {
   rules: {
     'react/react-in-jsx-scope': 0,
     'prettier/prettier': 'warn',
+    'react/button-has-type': 0,
   },
 };

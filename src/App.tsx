@@ -1,11 +1,23 @@
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 
+import RootStartingLayout from './pages/Root';
 import StartingPage from './pages/StartingPage';
+import Signup from './pages/Signup';
 
 const router = createBrowserRouter([
   {
     path: '/',
-    element: <StartingPage />,
+    element: <RootStartingLayout />,
+    children: [
+      {
+        path: '',
+        element: <StartingPage />,
+      },
+      {
+        path: 'signup',
+        element: <Signup />,
+      },
+    ],
   },
 ]);
 
