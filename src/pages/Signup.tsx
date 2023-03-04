@@ -10,7 +10,7 @@ function Signup() {
   const breakPoint = 720;
 
   return (
-    <div className='flex flex-col '>
+    <main className='flex flex-col '>
       <span className='h-4 lg:h-16' />
       <div className='flex max-w-xl mx-auto'>
         {width > breakPoint ? (
@@ -47,7 +47,7 @@ function Signup() {
           </form>
         </div>
       </div>
-    </div>
+    </main>
   );
 }
 

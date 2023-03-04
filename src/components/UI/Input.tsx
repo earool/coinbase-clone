@@ -17,6 +17,7 @@ function Input({ isRequired, label, input }: InputProps) {
         type={input.type}
         id={input.id}
         className='w-full h-[2.75rem] py-2 mt-2 border border-gray-border-darker rounded-md p-2 focus:outline-none focus:border-my-blue-darker focus:border-2'
+        placeholder={`Enter your ${label}...`}
       />
     </label>
   );
