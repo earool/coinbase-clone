@@ -1,9 +1,15 @@
 import React from 'react';
 
 import StartingMain from '../components/StartingMain';
+import StartingHeader from '../components/StartingHeader';
 
 function StartingPage() {
-  return <StartingMain />;
+  return (
+    <>
+      <StartingHeader />
+      <StartingMain />
+    </>
+  );
 }
 
 export default StartingPage;

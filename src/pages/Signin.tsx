@@ -1,9 +1,12 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 
 import Input from '../components/UI/Input';
 import Button from '../components/UI/Button';
 
 function Signin() {
+  const navigate = useNavigate();
+
   return (
     <main className='flex flex-col'>
       <span className='h-4 sm:h-32' />
@@ -23,7 +26,14 @@ function Signin() {
             label='Email'
             input={{ type: 'text', id: 'username' }}
           />
-          <Button type='button'>continue</Button>
+          <Button
+            type='button'
+            onClick={() => {
+              navigate('/home');
+            }}
+          >
+            continue
+          </Button>
         </form>
       </div>
     </main>

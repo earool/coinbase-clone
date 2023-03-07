@@ -1,8 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import bitcoinLogo from '../assets/icons/bitcoin.svg';
-import rightArrow from '../assets/icons/right-arrow.png';
+import { ReactComponent as BitcoinLogo } from '../assets/icons/others/bitcoin.svg';
+import { ReactComponent as RightArrow } from '../assets/icons/others/right_arrow.svg';
 import placeholderImage from '../assets/images/placeholder-landing.png';
 
 function StartingMain() {
@@ -10,15 +10,15 @@ function StartingMain() {
     <main className='flex max-w-5xl mx-auto mt-6'>
       <section className='p-12 lg:flex'>
         <div className='lg:max-w-md font-medium [&>*]:mb-6'>
-          <div className='flex items-center text-my-blue [&>img]:w-7 [&>img]:inline'>
-            <img src={bitcoinLogo} alt='bitcoin logo' />
+          <div className=' text-my-blue '>
             <Link
               to='signup'
-              className='mx-2 hover:underline text-sm font-semibold'
+              className='flex items-center mx-2 hover:underline text-sm font-semibold'
             >
+              <BitcoinLogo className='w-7 mr-2' />
               Jump start your portfolio
+              <RightArrow className='ml-2' />
             </Link>
-            <img src={rightArrow} alt='arrow' />
           </div>
           <h1 className='lg:w-3/4 lg:text-6xl text-4xl '>
             <span>Jump start your crypto portfolio</span>

@@ -1,7 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 
-import LeftArrow from '../../assets/icons/left-arrow.png';
+import { ReactComponent as LeftArrow } from '../../assets/icons/others/left_arrow.svg';
 
 function GoBackButton() {
   const navigate = useNavigate();
@@ -16,7 +16,7 @@ function GoBackButton() {
       className='bg-gray-border rounded-3xl p-2 mr-5 mt-2'
     >
       <div>
-        <img src={LeftArrow} alt='back arrow' className='w-6' />
+        <LeftArrow />
       </div>
     </button>
   );
