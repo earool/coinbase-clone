@@ -29,7 +29,7 @@ function Signin() {
           <Button
             type='button'
             onClick={() => {
-              navigate('/home');
+              navigate('/u/home');
             }}
           >
             continue

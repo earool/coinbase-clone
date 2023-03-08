@@ -4,6 +4,12 @@ import Root from './pages/Root';
 import StartingPage from './pages/StartingPage';
 import Signup from './pages/Signup';
 import Signin from './pages/Signin';
+// Home
+import HRoot from './pages/Home/HRoot';
+import HomeMain from './pages/Home/HomeMain';
+import AssetsMain from './pages/Home/Assets';
+import PayMain from './pages/Home/PayMain';
+import TradeMain from './pages/Home/Trade';
 
 const router = createBrowserRouter([
   {
@@ -21,6 +27,28 @@ const router = createBrowserRouter([
       {
         path: 'signup',
         element: <Signup />,
+      },
+      {
+        path: 'u',
+        element: <HRoot />,
+        children: [
+          {
+            path: 'home',
+            element: <HomeMain />,
+          },
+          {
+            path: 'assets',
+            element: <AssetsMain />,
+          },
+          {
+            path: 'pay',
+            element: <PayMain />,
+          },
+          {
+            path: 'trade',
+            element: <TradeMain />,
+          },
+        ],
       },
     ],
   },
