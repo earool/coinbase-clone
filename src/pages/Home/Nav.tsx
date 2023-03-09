@@ -32,7 +32,7 @@ function Nav() {
 
   return width < breakpoint ? (
     <>
-      <nav className='flex justify-between items-center my-2 mx-6'>
+      <nav className=' flex justify-between items-center my-2 mx-4'>
         <Logo className='text-my-blue cursor-pointer hover:text-my-blue-darker w-6' />
         <Hamburger className='w-6 cursor-pointer' />
       </nav>

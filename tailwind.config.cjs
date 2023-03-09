@@ -15,6 +15,7 @@ module.exports = {
       gridTemplateColumns: {
         sidebar: '200px 1fr',
         sidebarSmall: '80px 1fr',
+        MMenuColGrid: 'repeat(auto-fit, minmax(90px, 1fr))',
       },
     },
   },
